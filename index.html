@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>jQuery.lastFM</title>
+		<script type="text/javascript" src="jquery-1.4.1.min.js"></script>
+		<script type="text/javascript" src="jquery.lastFM.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(document).lastFM({
+					apiKey: "f72e45685382f281ab7ff35dff816377"
+				});
+				$(document).lastFM.getAlbum("This Binary Universe", "BT", function(album) {
+					alert(album.name);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>jQuery.lastFM</h1>
+	</body>
+</html>
